@@ -1,0 +1,25 @@
+.Nav-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+
+.logo {
+    height: 60%;
+    padding: 20px;
+}
+
+.nav-h{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.nav-h_menu{
+    font-size: 2vw;
+    font-weight: 500;
+}
