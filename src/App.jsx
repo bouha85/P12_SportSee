@@ -1,14 +1,19 @@
 import React from 'react';
-import NavH from './components/NavH';
-import NavV from './components/NavV';
-// import Header from './components/Header';
+
+import Header from './components/Header';
+import BarCharts from './components/Charts/BarChart';
 
 const App = () => {
     return (
         <div className='APP'>
-            <NavH/>
-            {/* <Header/> */}
-            <NavV/>
+            <section>
+                <Header/>
+            </section>
+            <section>
+            <div>
+            <BarCharts />
+            </div>
+            </section>
         </div>
     );
 };
