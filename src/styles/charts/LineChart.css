@@ -1,0 +1,14 @@
+.linechart-ui {
+    padding-top: 20px;
+    background-color: #ff0000;
+    width: 350px;
+    height: 350px;
+}
+.linechart-ui span {
+    margin-left: 20px;
+    color: #ccc;
+}
+span {
+    font-size: .6rem;;
+}
+  

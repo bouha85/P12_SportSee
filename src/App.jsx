@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Header from './components/Header';
-import BarCharts from './components/Charts/BarChart';
+import BarCharts from './components/BarChart';
+import LineCharts from './components/LineChart';
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <section>
             <div>
             <BarCharts />
+            <LineCharts/>
             </div>
             </section>
         </div>
