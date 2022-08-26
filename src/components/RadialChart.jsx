@@ -1,5 +1,5 @@
 import React from "react";
-import { RadialBarChart, RadialBar, PolarAngleAxis } from "recharts";
+import { RadialBarChart, RadialBar, PolarAngleAxis, ResponsiveContainer } from "recharts";
 
 const data = [
   {
@@ -10,6 +10,7 @@ const data = [
 
 const RadialCharts = () => {
   return (
+    <ResponsiveContainer width="100%" height="100%">
     <RadialBarChart
       width={350}
       height={350}
@@ -42,6 +43,7 @@ const RadialCharts = () => {
       <PolarAngleAxis type="number" domain={[0, 100]} tick={false} />
       <RadialBar background={true} dataKey="uv" cornerRadius={20} />
     </RadialBarChart>
+    </ResponsiveContainer>
   );
 }
 

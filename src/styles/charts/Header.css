@@ -1,0 +1,10 @@
+.header {
+    padding-bottom: 2%;
+    font-size: 1.2vw;
+    margin-bottom: 1rem;
+}
+.header h1 .name {
+    color: #ff0000;
+    font-size: 28px;
+    padding-left: 7px;
+}

@@ -1,6 +1,6 @@
 import * as React from "react";
 import '../styles/charts/LineChart.css'
-import { LineChart, Line, XAxis } from "recharts";
+import { LineChart, Line, XAxis,ResponsiveContainer } from "recharts";
 
 const data = [
   {
@@ -37,10 +37,12 @@ const LineCharts = () => {
   return (
     <div className="linechart-ui">
       <span>Durée moyenne des sessions</span>
+      <ResponsiveContainer width="100%" height="100%">
       <LineChart width={300} height={200} data={data}>
         <Line type="monotone" dataKey="pv" stroke="#fff" strokeWidth={2} />
         <XAxis dataKey="name" axisLine={false} stroke="#fff" tickLine={false} />
       </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 }

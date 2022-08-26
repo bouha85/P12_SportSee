@@ -38,7 +38,7 @@ const data = [
 const RadarCharts = () => {
   return (
     <div className="radar-UI">
-      <ResponsiveContainer>
+      <ResponsiveContainer width="100%" height="100%">
         <RadarChart
           cx='50%'
           cy='50%'
