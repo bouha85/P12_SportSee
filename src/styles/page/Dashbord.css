@@ -6,7 +6,7 @@
     flex: 1 0;
     display: flex;
     flex-direction: column;
-    padding: 5% 5% 0 5%;
+    padding: 1% 5% 0 5%;
 }
 
 .dasbord-graphs {
@@ -26,7 +26,7 @@
     font-size: 1vw;
 }
 
-.weight {
+/* .weight {
     width: 100%;
     grid-column: 1/4;
     grid-row: 1/3;
@@ -63,4 +63,4 @@
     border-radius: 5px;
     font-weight: 500;
     font-size: 1vw;
-}
+} */

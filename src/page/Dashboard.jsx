@@ -21,17 +21,17 @@ const Dashboard = () => {
                 </div>
                 
                 <div className='duration'>
-            <LineCharts/>
+            <LineCharts id={id} />
                 </div>
                 <div className='radar'>
-            <RadarCharts/>
+            <RadarCharts id={id}/>
                 </div> 
             <div className='score'>
-            <RadialCharts/>
+            <RadialCharts id={id}/>
             </div>
            
             
-            <Counter/>
+            <Counter id={id}/>
             </div>
            </Fragment>    
         </div>

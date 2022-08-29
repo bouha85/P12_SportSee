@@ -1,6 +1,7 @@
 import React from "react";
 import API from "../services/Api";
 import { USER_ACTIVITY } from "../services/Mocked";
+import '../styles/charts/BarChart.css'
 import {
   BarChart,
   Bar,
@@ -12,68 +13,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// const data = [
-//     {
-//       name: "1",
-//       uv: 4000,
-//       pv: 2400,
-//       max: 10000
-//     },
-//     {
-//       name: "2",
-//       uv: 3000,
-//       pv: 1398,
-//       max: 10000
-//     },
-//     {
-//       name: "3",
-//       uv: 2000,
-//       pv: 9800,
-//       max: 10000
-//     },
-//     {
-//       name: "4",
-//       uv: 2780,
-//       pv: 3908,
-//       max: 10000
-//     },
-//     {
-//       name: "5",
-//       uv: 1890,
-//       pv: 4800,
-//       max: 10000
-//     },
-//     {
-//       name: "6",
-//       uv: 2390,
-//       pv: 3800,
-//       max: 10000
-//     },
-//     {
-//       name: "7",
-//       uv: 3490,
-//       pv: 4300,
-//       max: 10000
-//     },
-//     {
-//       name: "8",
-//       uv: 2390,
-//       pv: 3800,
-//       max: 10000
-//     },
-//     {
-//       name: "9",
-//       uv: 2390,
-//       pv: 3800,
-//       max: 10000
-//     },
-//     {
-//       name: "10",
-//       uv: 2390,
-//       pv: 3800,
-//       max: 10000
-//     }
-//   ];
 
   const BarCharts = (userId) => {
     // const api = new API()
@@ -109,7 +48,8 @@ import {
     };
   
     return (
-      <ResponsiveContainer width="100%" height="100%">
+      <div className="daily-activity">
+      <ResponsiveContainer width="100%" height="100%" className="daily-activity-chart">
       <BarChart
         data={userDataDisplay}
         width={500}
@@ -190,6 +130,7 @@ import {
 					</text>
       </BarChart>
       </ResponsiveContainer>
+      </div>
     );
   }
   
