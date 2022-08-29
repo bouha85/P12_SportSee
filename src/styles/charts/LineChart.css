@@ -1,14 +1,18 @@
-.linechart-ui {
-    padding-top: 20px;
-    background-color: #ff0000;
-    width: 350px;
-    height: 350px;
+.average-session {
+	height: 263px;
+	width: 258px;
+	background-color: red;
+	border-radius: 8px;
 }
-.linechart-ui span {
-    margin-left: 20px;
-    color: #ccc;
+
+.average-title {
+	color: white;
+	font-size: 14px;
 }
-span {
-    font-size: .6rem;;
+
+.session-tooltip {
+	background-color: white;
+	padding: 0.5rem;
+	color: black;
+	font-size: 12px;
 }
-  

@@ -61,7 +61,7 @@ const RadarCharts = (userId) => {
 		};
 	});
   return (
-    <div className="radar-UI">
+    <div className="radar-chart">
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart
           cx='50%'

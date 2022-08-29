@@ -15,23 +15,19 @@ const Dashboard = () => {
         <div className='Dashbord'>
            <Fragment>
             <Header/>
-            <div className='dasbord-graphs'>
-                <div className='weight'>
+            <div className='dasbord-charts'>
+            <div className="dashbord-charts-first-column">   
             <BarCharts id={id} />
-                </div>
-                
-                <div className='duration'>
-            <LineCharts id={id} />
-                </div>
-                <div className='radar'>
+            <div className="dashbord-charts-first-column-row-3">
+            <LineCharts id={id} />  
             <RadarCharts id={id}/>
-                </div> 
-            <div className='score'>
             <RadialCharts id={id}/>
             </div>
+            </div>
            
-            
+            <div className="dashbord-charts-second-column"> 
             <Counter id={id}/>
+            </div>
             </div>
            </Fragment>    
         </div>

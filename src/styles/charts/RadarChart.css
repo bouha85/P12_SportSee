@@ -1,8 +1,10 @@
-.radar-UI {
-    width: 350px;
-    height: 350px;
-    background: #333;
+.radar-chart {
+  width: 258px;
+	height: 263px;
+	background-color: #282d30;
+	border-radius: 8px;
   }
   .recharts-text {
     color: #fff;
+		font-size: 12px;
   }

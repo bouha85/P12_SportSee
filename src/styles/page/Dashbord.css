@@ -9,58 +9,20 @@
     padding: 1% 5% 0 5%;
 }
 
-.dasbord-graphs {
-    display: grid;
-    width: auto;
-    height: 100%;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(4, 23%);
-    gap: 3% 3%;
-    margin-bottom: 10%;
-    margin-right: 10%;
+.dasbord-charts {
+    display: flex;
+	flex-direction: row;
+	gap: 1.5rem;
 }
 
-.dashboard_graphs > div {
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 1vw;
+.dashbord-charts-first-column {
+    display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
-/* .weight {
-    width: 100%;
-    grid-column: 1/4;
-    grid-row: 1/3;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 1vw;
+.dashbord-charts-first-column-row-3 {
+    display: flex;
+	flex-direction: row;
+	gap: 2rem;
 }
-
-.duration {
-    width: 100%;
-    overflow: hidden;
-    grid-column: 1/2;
-    grid-row: 3/5;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 1vw;
-}
-
-.radar {
-    width: 100%;
-    grid-column: 2/3;
-    grid-row: 3/5;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 1vw;
-}
-
-.score {
-    width: 100%;
-    grid-column: 3/4;
-    grid-row: 3/5;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 1vw;
-} */

@@ -1,0 +1,10 @@
+.score-chart {
+	width: 258px;
+	height: 263px;
+	border-radius: 8px;
+	background-color: #fbfbfb;
+}
+
+.score-legend {
+	text-align: center;
+}

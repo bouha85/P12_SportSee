@@ -46,7 +46,7 @@ const LineCharts = (userId) => {
 	};
     
   return (
-    <div className="linechart-ui">
+    <div className="average-session">
       <ResponsiveContainer width="100%" height="100%">
       <LineChart 
             width={500}
