@@ -31,7 +31,8 @@ const RadialCharts = (userId) => {
       startAngle={-270}
       endAngle={90}
     >
-      <text className="graphTitle" x="35%" y="20%" textAnchor="middle" dominantBaseline="middle">
+      <text className="graphTitle" x="17%"
+						y="15%" fill="#979797" textAnchor="middle" dominantBaseline="middle">
         Score
       </text>
       <text
@@ -40,14 +41,14 @@ const RadialCharts = (userId) => {
         y="42%"
         textAnchor="middle"
         dominantBaseline="middle"
-        style={{ fontWeight: 700, fontSize: 16 }}
+        style={{     color: 979797, fontSize: 20 }}
       >
         {userData * 100}%
       </text>
-      <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" style={{ fontWeight: 700, fontSize: 16 }}>
+      <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fill="#979797">
         de votre
       </text>
-      <text x="50%" y="58%" textAnchor="middle" dominantBaseline="middle" style={{ fontWeight: 700, fontSize: 16 }}>
+      <text x="50%" y="58%" textAnchor="middle" dominantBaseline="middle" fill="#979797">
         objectif
       </text>
       <PolarAngleAxis type="number" domain={[0, 100]} tick={false} />

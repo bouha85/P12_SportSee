@@ -4,6 +4,13 @@ import PropTypes from "prop-types";
 import API from "../services/Api";
 import { USER_MAIN_DATA } from "../services/Mocked";
 
+
+/**
+ * The Header component is a React component that renders a header with a name and a paragraph
+ * @param {string} firstname
+ * @returns A div with a h1 and a p.
+ */
+
 const Header = () => {
   const id = 12;
   const userIndex = USER_MAIN_DATA.findIndex((obj) => {

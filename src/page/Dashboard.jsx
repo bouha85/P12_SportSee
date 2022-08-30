@@ -8,6 +8,7 @@ import RadarCharts from '../components/RadarChart';
 import RadialCharts from '../components/RadialChart';
 import Counter from '../components/Counter';
 import '../styles/page/Dashbord.css'
+import PropTypes from "prop-types";
 
 const Dashboard = () => {
     const id = 12;
@@ -35,4 +36,8 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+Dashboard.propTypes = {
+	userId: PropTypes.number.isRequired,
+};
+
 

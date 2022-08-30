@@ -15,13 +15,15 @@ p, h3 {
 }
 
 .counter_icon_cell {
+    width: 258px;
+	height: 124px;
     background-color: #f4f4f4;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 37px;
     border-radius: 5px;
 }
 .counter_icon {
-    margin: 16px;
+    margin: 32px ;
     width: 60px;
     height: 60px;
     border-radius: 6px;
@@ -34,7 +36,7 @@ p, h3 {
 }
 
 .counter_text {
-    margin-top: 27px;
+    margin-top: 43px;
 }
 
 .counter_text p {

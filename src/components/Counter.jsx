@@ -16,8 +16,7 @@ const Counter = (userId) => {
 	const userData = USER_MAIN_DATA[userIndex].keyData;
 
   return (
-    <div className="counter">
-        <div className='counter-info'>
+    <div className="counter"> 
       <div className="counter_icon_cell">
         <div className="counter_icon" style={{backgroundColor:'#ffe6e6'} }>
           <img src={energy} alt="energy calories" />
@@ -25,7 +24,6 @@ const Counter = (userId) => {
         <div className="counter_text">
           <h3>{userData.calorieCount}kCal</h3>
           <p>Calories</p>
-        </div>
       </div>
       </div>
       <div className="counter_icon_cell">
