@@ -1,3 +1,58 @@
+# P12: React & Recharts Dashboard / SportSee
+
+## Project's presentation
+
+SportSee is a startup dedicated to sport's coaching. The purpose of this project is to developp a brand new Dashboard's version of their application, where the user can check any important data about his sport's practice.
+
+This project has been developped with React and <a href="https://recharts.org/en-US/">Recharts librairie</a>.
+
+Two repositories are needed to enable the project to run:
+
+## 1. BACK-END
+
+An alternative to the use of this back-end API is available, see below at [USE WITHOUT BACKEND](#use-without-backend) in front-end section.
+
+The back-end project requires nodeJS installed and any package manager such as npm or yarn. Please refer to the README available on the repository for further informations.
+
+* You have to clone the back-end locally with either/or :
+
+```bash
+# HTTPS
+git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git
+
+# SSH
+git clone git@github.com:OpenClassrooms-Student-Center/P9-front-end-dashboard.git
+```
+
+* Then access inside your local repository and install dependencies with :
+
+```bash
+npm install
+```
+
+* launch the back-end with either/or:
+
+```bash
+ npm start
+ npm run dev
+ ```
+### URL/PORT
+
+The default URL used by the micro-API is <http://localhost:3000>.
+
+## 2. FRONT-END
+
+The present repository contains this part of the project. Any package manager such as npm or yarn is required.
+
+* You have to clone the project locally with either/or :
+
+```bash
+# HTTPS
+ git clone https://github.com/bouha85/P12_SportSee.git
+
+# SSH
+git clone git@github.com:bouha85/P12_SportSee.git
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
