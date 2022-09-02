@@ -1,3 +1,6 @@
+[![forthebadge](./made-with-create-react-app.svg)](https://create-react-app.dev/)
+[![forthebadge](./uses-recharts.svg)](https://recharts.org/en-US/)
+
 # P12: React & Recharts Dashboard / SportSee
 
 ## Project's presentation
