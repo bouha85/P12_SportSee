@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/charts/RadarChart.css'
 import API from "../services/Api";
+import PropTypes from "prop-types";
 import { USER_PERFORMANCE } from "../services/Mocked";
 import {
   ResponsiveContainer,
@@ -10,32 +11,6 @@ import {
   PolarAngleAxis
 } from "recharts";
 
-// const data = [
-//   {
-//     subject: "Intensité",
-//     Frank: 120
-//   },
-//   {
-//     subject: "Vitesse",
-//     Frank: 98
-//   },
-//   {
-//     subject: "Force",
-//     Frank: 86
-//   },
-//   {
-//     subject: "Endurance",
-//     Frank: 99
-//   },
-//   {
-//     subject: "Energie",
-//     Frank: 99
-//   },
-//   {
-//     subject: "Cardio",
-//     Frank: 99
-//   }
-// ];
 
 const RadarCharts = (userId) => {
 
@@ -84,3 +59,7 @@ const RadarCharts = (userId) => {
 }
 
 export default RadarCharts;
+
+RadarCharts.prototype = {
+  userId: PropTypes.number.isRequired
+}

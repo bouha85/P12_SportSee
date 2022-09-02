@@ -11,16 +11,11 @@ import { USER_MAIN_DATA } from "../services/Mocked";
  * @returns A div with a h1 and a p.
  */
 
-const Header = () => {
-  const id = 12;
-  const userIndex = USER_MAIN_DATA.findIndex((obj) => {
-		return obj.id === id;
-	});
-
-	const userData = USER_MAIN_DATA[userIndex].userInfos;
+const Header = ({firstname}) => {
+  
     return (
         <div className='header'>
-          <h1>Bonjour <span className='name'>{ userData.firstName }</span></h1> 
+          <h1>Bonjour <span className='name'>{firstname}</span></h1> 
           <p>Félicitations! Vous avez explosé vos objectifs hier 👏 </p> 
         </div>
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import API from "../services/Api";
+import PropTypes from "prop-types";
 import { USER_ACTIVITY } from "../services/Mocked";
 import '../styles/charts/BarChart.css'
 import {
@@ -135,3 +136,6 @@ import {
   }
   
   export default BarCharts;
+  BarCharts.prototype = {
+    userId: PropTypes.number.isRequired
+  }

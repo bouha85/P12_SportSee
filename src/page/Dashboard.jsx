@@ -10,12 +10,24 @@ import Counter from '../components/Counter';
 import '../styles/page/Dashbord.css'
 import PropTypes from "prop-types";
 
+/**
+ * This function renders the dashboard.
+ * @param {number} userId - The id number of current user.
+ * @returns The Dashboard component is returning a div element with all the graphics.
+ */
+
 const Dashboard = () => {
     const id = 12;
+    
+  const userIndex = USER_MAIN_DATA.findIndex((obj) => {
+		return obj.id === id;
+	});
+
+	const userData = USER_MAIN_DATA[userIndex].userInfos;
     return (
         <div className='Dashbord'>
            <Fragment>
-            <Header/>
+            <Header firstname={userData.firstName} />
             <div className='dasbord-charts'>
             <div className="dashbord-charts-first-column">   
             <BarCharts id={id} />

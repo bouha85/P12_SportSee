@@ -1,6 +1,7 @@
 import * as React from "react";
 import '../styles/charts/LineChart.css'
 import API from "../services/Api";
+import PropTypes from "prop-types";
 import { USER_AVERAGE_SESSIONS } from "../services/Mocked";
 import { LineChart, Line, YAxis, XAxis, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
@@ -50,14 +51,14 @@ const LineCharts = (userId) => {
       <ResponsiveContainer width="100%" height="100%">
       <LineChart 
             width={500}
-						height={300}
-						data={sessions}
-						margin={{
-							top: 20,
-							right: 15,
-							left: 15,
-							bottom: 15,
-						}}>
+			height={300}
+			data={sessions}
+			margin={{
+			top: 20,
+			right: 15,
+			left: 15,
+			bottom: 15,
+			}}>
         <XAxis dataKey="name" axisLine={false} stroke="#fff" tick={{ fill: "#ffffff", fontWeight: 500, fontSize: 14 }} />
         <YAxis hide={true} />
         <Line
@@ -76,3 +77,6 @@ const LineCharts = (userId) => {
 }
 
 export default LineCharts;
+LineCharts.prototype = {
+	userId: PropTypes.number.isRequired
+}
